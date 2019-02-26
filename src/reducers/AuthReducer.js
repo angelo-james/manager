@@ -8,7 +8,8 @@ import {
 const initialState = {
   email: '',
   password: '',
-  user: null
+  user: null,
+  error: ''
 }
 
 export default (state = initialState, action) => {
@@ -28,6 +29,11 @@ export default (state = initialState, action) => {
         ...state,
         user: action.payload
       }
+    case LOGIN_USER_FAILED:
+    return {
+      ...state,
+      error: 'Authentication Failed'
+    }
     default:
       return state;
   }
