@@ -50,7 +50,7 @@ class EmployeeForm extends Component {
 const styles = {
   pickerTextStyle: {
     fontSize: 18,
-    paddingleft: 20
+    paddingLeft: 20
   }
 }
 
